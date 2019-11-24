@@ -21,7 +21,7 @@ Look at the source code. If a string to be replaced only once, the code below is
 
 The term "Kalsiyum" expected to be seen only once, but "mg/dL" could be seen multipl times, so the code above only removes first occurence of "mg/dL"
 
-this code removes all occurences (globally) of "mg/dl"
+this code removes all occurences (globally) of "mg/dl". First parameter must be a RegularExpression now:
 
   	shortText = shortText.replace (/mg/dL/g, "");
 
