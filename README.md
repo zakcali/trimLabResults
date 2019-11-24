@@ -14,27 +14,26 @@ Now you can select the trimmed text, and copy it to clipboard, then paste it to 
 
 JavaScript String replace() Method
 
-shortText = shortText.replace ("Kalsiyum - ", "Ca:");
-
-shortText = shortText.replace ("mg/dL", " ");
+	shortText = shortText.replace ("Kalsiyum - ", "Ca:");
+	shortText = shortText.replace ("mg/dL", " ");
 
 in the source code, if a string to be replaced only once, below code might be enough
 
-  shortText = shortText.replace (shortArray[index], shortArray[index]);
+	shortText = shortText.replace (shortArray[index], shortArray[index]);
 
 The term "Kalsiyum" is seen only once, but "mg/dL" could be seen multipl times, so above code only removes first occurence of "mg/dL"
 
 Below code removes all occurences of "mg/dl"
 
-  shortText = shortText.replace (/mg/dL/g, " ");
+  	shortText = shortText.replace (/mg/dL/g, " ");
 
 this code doesn't work:
 
-  rText="/"+longArray[index]+"/g/";
-  shortText = shortText.replace (rText, shortArray[index]);
+  	rText="/" + longArray[index] + "/g/";
+  	shortText = shortText.replace (rText, shortArray[index]);
 
 but this code works:
 
-    rText= longArray[index];
-		shortText = shortText.replace (new RegExp(rText,"g"), shortArray[index]);
+    	rText= longArray[index];
+	shortText = shortText.replace (new RegExp(rText,"g"), shortArray[index]);
     
