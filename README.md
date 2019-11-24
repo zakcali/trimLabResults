@@ -35,4 +35,10 @@ but this code works:
 	rText= longArray[index];
 	shortText = shortText.replace (new RegExp(rText,"g"), shortArray[index]);
 	
+this simple code removes all new lines:
+
+	shortText = shortText.replace (/\n/g, " ");
+
+
+	
     
