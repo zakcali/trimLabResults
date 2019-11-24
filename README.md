@@ -2,9 +2,8 @@
 Nucleus EHR software by Monad Yazılım, has ability to copy/paste laboratory results to patient's history.
 As an oncologist, I have lots of visits for a patient, so lots of text to write to patients history. 
 I need to shorten the laboratory result texts, as follows:
-"Kalsiyum - 10,6 mg/dL" -> "Ca:10,6"
-
-Sodyum - 135,0 mg/dL" -> "Na:135,0" 
+	"Kalsiyum - 10,6 mg/dL" -> "Ca:10,6"
+	"Sodyum - 135,0 mg/dL" -> "Na:135,0" 
 
 Morover, I need whole text in one line, instead of one result per line.
 
