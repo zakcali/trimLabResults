@@ -32,7 +32,7 @@ We must supply /mg/dL/g as a variable to Method by reading from an array. This c
 
 but this code works:
 
-    		rText= longArray[index];
-		shortText = shortText.replace (new RegExp(rText,"g"), shortArray[index]);
+	rText= longArray[index];
+	shortText = shortText.replace (new RegExp(rText,"g"), shortArray[index]);
 	
     
