@@ -1,0 +1,27 @@
+<doctype html !>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratuvar raporu kısaltıcısı</title>
+</head>
+<body>
+	Kısaltılacak Nucleus laboratuvar sonuç metnini giriniz : <br />
+	<textarea rows = "25" cols = "50" name = "Uzun Yazı" id="text1"></textarea> <br /> 
+	<button onclick="trimFunction()">Kısalt</button><br />
+    Kısaltılmış Nucleus laboratuvar sonuç metni : <br />
+	<textarea rows = "15" cols = "100" name = "Kısa Yazı" id="text2"></textarea> <br />
+<script>
+	longArray = ["Zafer", "Alper", "Kemal", "Hemoglobin - " ];
+	shortArray = ["Zak", "Alp", "Kem", "Hb:"];
+function trimFunction() {
+	shortText = document.getElementById('text1').value;
+	for (index in longArray) { // first item to last item
+		rText= longArray[index];
+		shortText = shortText.replace (new RegExp(rText,"g"), shortArray[index]); // shorten long descriptions
+	}
+	shortText = shortText.replace (/\n/g, " "); // delete new lines
+	document.getElementById('text2').value = shortText;
+}
+</script>
+</body>
+</html>
