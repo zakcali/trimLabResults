@@ -13,13 +13,13 @@ So I wrote a html web page, with minimal JavaScript coding. Just paste laborator
 JavaScript String replace() Method
 
 	shortText = shortText.replace ("Kalsiyum - ", "Ca:");
-	shortText = shortText.replace ("mg/dL", " ");
+	shortText = shortText.replace ("mg/dL", "");
 
 in the source code, if a string to be replaced only once, below code might be enough
 
 	shortText = shortText.replace (longArray[index], shortArray[index]);
 
-The term "Kalsiyum" is seen only once, but "mg/dL" could be seen multipl times, so above code only removes first occurence of "mg/dL"
+The term "Kalsiyum" expected to be seen only once, but "mg/dL" could be seen multipl times, so above code only removes first occurence of "mg/dL"
 
 Below code removes all occurences of "mg/dl"
 
