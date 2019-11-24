@@ -15,17 +15,17 @@ JavaScript String replace() Method
 	shortText = shortText.replace ("Kalsiyum - ", "Ca:");
 	shortText = shortText.replace ("mg/dL", "");
 
-in the source code, if a string to be replaced only once, below code might be enough
+Look at the source code. If a string to be replaced only once, the code below is enough:
 
 	shortText = shortText.replace (longArray[index], shortArray[index]);
 
-The term "Kalsiyum" expected to be seen only once, but "mg/dL" could be seen multipl times, so above code only removes first occurence of "mg/dL"
+The term "Kalsiyum" expected to be seen only once, but "mg/dL" could be seen multipl times, so the code above only removes first occurence of "mg/dL"
 
 this code removes all occurences (globally) of "mg/dl"
 
   	shortText = shortText.replace (/mg/dL/g, "");
 
-We must supply long text as a variable to Method by reading from an array. This code doesn't work:
+We must supply /mg/dL/g as a variable to Method by reading from an array. This code doesn't work:
 
   	rText="/" + longArray[index] + "/g";
   	shortText = shortText.replace (rText, shortArray[index]);
