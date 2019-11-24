@@ -2,6 +2,7 @@
 Nucleus EHR software by Monad Yazılım, has ability to copy/paste laboratory results to patient's history.
 As an oncologist, I have lots of visits for a patient, so lots of text to write to patients history. 
 I need to shorten the laboratory result texts, as follows:
+
 	"Kalsiyum - 10,6 mg/dL" -> "Ca:10,6"
 	"Sodyum - 135,0 mg/dL" -> "Na:135,0" 
 
@@ -18,7 +19,7 @@ JavaScript String replace() Method
 
 in the source code, if a string to be replaced only once, below code might be enough
 
-	shortText = shortText.replace (shortArray[index], shortArray[index]);
+	shortText = shortText.replace (longArray[index], shortArray[index]);
 
 The term "Kalsiyum" is seen only once, but "mg/dL" could be seen multipl times, so above code only removes first occurence of "mg/dL"
 
