@@ -8,9 +8,7 @@ I need to shorten the laboratory result texts, as follows:
 
 Morover, I need whole text in one line, instead of one result per line.
 
-So I wrote a html web page, with minimal JavaScript coding.
-Paste laboratory results text to form on the top, click "Kısalt" button, see trimmed text in the form on the bottom.
-Now you can select the trimmed text, and copy it to clipboard, then paste it to patients history.
+So I wrote a html web page, with minimal JavaScript coding. Just paste laboratory results text to form on the top, click "Kısalt" button, see trimmed text in the form on the bottom. Now you can select the trimmed text, and copy it to clipboard, then paste it to patients history.
 
 JavaScript String replace() Method
 
