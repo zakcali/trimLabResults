@@ -35,10 +35,11 @@ but this code works:
 	rText= longArray[index];
 	shortText = shortText.replace (new RegExp(rText,"g"), shortArray[index]);
 	
-this simple code removes all new lines:
+this simple line removes all new lines:
 
 	shortText = shortText.replace (/\n/g, " ");
-
+this simple line removes all (): Removing () remnants of () is a bit tricky, you need to use RegExp
+	shortText = shortText.replace (/\(\)/g, ""); 
 
 	
     
