@@ -1,3 +1,4 @@
+
 <doctype html !>
 <html>
 <head>
@@ -11,15 +12,15 @@
     Kısaltılmış Nucleus laboratuvar sonuç metni : <br />
 	<textarea rows = "15" cols = "100" name = "Kısa Yazı" id="text2"></textarea> <br />
 <script>
-	longArray = ["Kalsiyum - ", "Potasyum - ", "mg/dL", "Hemoglobin - " ];
-	shortArray = ["Ca:", "K:", "", "Hb:"];
+	longArray = ["Sedimentasyon", "mm/saat", "LDL - Kolesterol", "HDL - Kolesterol", "Total Kolesterol","CA 19 - 9", "CA 15 - 3", "CA - 125", " saniye", "Glomerüler Filtrasyon Hızı", "U/mL", "ng/mL", "ml/dk/1.73m2", "ng/L", "mU/L", "ng/dL", "µg/dL", "ml/dk/1,73m2", "\n", " - ", "mg/dL", "mmol/L", "g/dL", "IU/L", " M/µL", "/µL", "µg/L","U/mL", "U/L", " bin", "pg", "fL", "(CKD:EPI)", "(türbidimetrik)", "mg/L", "Protrombin Zamanı", "Eozinofil %", " %", "(Alkalen Fosfataz)", "Kreatinin", "Sodyum", "Potasyum", "Kalsiyum", "Fosfor", "Magnezyum", "Ürik Asit", "Total Protein", "Albumin", "Total Bilirubin", "Direkt Bilirubin", "Hemoglobin", "Hematokrit", "Trombosit", "Nötrofil", "APTT", "Her Sahada", "Kültür:", "25 OH-Kolekalsiferol","Glukoz ", "Serb.Demir Bağlama Kap.", "(Prostat Spesifik Antijen)", "PSA ", "CRP ","Total Testosteron", "Serbest T3", "Serbest T4"];
+	shortArray = ["Sedim", "", "LDL.kol", "HDL.kol", "T.kol", "CA 19-9", "CA 15-3", "CA 125", "\" ", "GFR", "", "", "", "", "", "", "", "", "", ":", "", "", "", "", "milyon ", "", "","", "", "k ", "", "", "", "", "", "", "Eozinofil%"," ", "", "Kre", "Na", "K", "Ca", "P", "Mg", "Ürat", "T.prot", "Alb", "T.bil", "D.bil", "Hb", "Hct", "Plt", "ANC", "aPTT", "Her Sahada ", "", "VitD", "KŞ", "sDBK", "", "PSA", "CRP", "T.testosteron", "sT3", "sT4"];
 function trimFunction() {
 	shortText = document.getElementById('text1').value;
 	for (index in longArray) { // first item to last item
 		rText= longArray[index];
 		shortText = shortText.replace (new RegExp(rText,"g"), shortArray[index]); // shorten long descriptions
 	}
-	shortText = shortText.replace (/\n/g, " "); // delete new lines
+	shortText = shortText.replace (/\(\)/g, ""); // delete ()
 	document.getElementById('text2').value = shortText;
 }
 </script>
