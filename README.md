@@ -38,7 +38,7 @@ but this code works:
 this simple line removes all new lines:
 
 	shortText = shortText.replace (/\n/g, " ");
-this simple line removes all (). Removing () remnants of () is a bit tricky, you need to use RegExp:
+this simple line removes all (). Removing remnants of () is a bit tricky, you need to use RegExp:
 
 	shortText = shortText.replace (/\(\)/g, ""); 
 
