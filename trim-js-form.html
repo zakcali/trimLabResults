@@ -14,17 +14,14 @@
 	<textarea rows = "15" cols = "100" name = "Kısa Yazı" id="text2"></textarea> <br />
 	<button onclick="copyFunction()">Kopyala</button><br />
 <script>
-	longArray = ["Troponin - I", "µmol/L", "Folik Asit", "Sedimentasyon", "mm/saat", "LDL - Kolesterol", "HDL - Kolesterol", "Total Kolesterol","Trigliserid", "CA 19 - 9", "CA 15 - 3", "CA - 125", " saniye", "Glomerüler Filtrasyon Hızı ", "pg/mL", "IU/mL", "U/mL", "ng/mL", "ml/dk/1.73m2", "ng/L", "mU/L", "ng/dL", "µg/dL", "ml/dk/1,73m2", "\n", " - ", "mg/dL", "mmol/L", "g/dL", "IU/L", " M/µL", "/µL", "µg/L","U/mL", "U/L", " bin", "pg", "fL", "(CKD:EPI)", "türbidimetrik", "mg/L", "Protrombin Zamanı ", "Eozinofil %", " %", "Alkalen Fosfataz", "Kreatinin", "Sodyum", "Potasyum", "Kalsiyum", "Fosfor", "Magnezyum", "Ürik Asit", "Total Protein", "Albumin", "Total Bilirubin", "Direkt Bilirubin", "Hemoglobin", "Hematokrit", "Trombosit", "Nötrofil", "APTT", "Her Sahada", "Kültür:", "25 OH-Kolekalsiferol","Glukoz ", "Açlık", "Serb.Demir Bağlama Kap.", "(Prostat Spesifik Antijen)", "PSA ", "CRP ","ALP ","Total Testosteron", "Serbest T3", "Serbest T4", "mmol/mol", " :", ": ", "Paratiroid Hormon", "Difenil Hidantoin ", "Hastabaşı, glukometrik", "< ", "Demir-"," :"];
-	shortArray = ["Troponin-I", "", "Folat", "Sedim", "", "LDL.kol", "HDL.kol", "T.kol", "TG", "CA 19-9", "CA 15-3", "CA 125", "\" ", "GFR", "", "", "", "", "", "", "", "", "", "", "", ":", "", "", "", "", "milyon ", "", "","", "", "k ", "", "", "", "", "", "", "Eozinofil%"," ", "", "Kre", "Na", "K", "Ca", "P", "Mg", "Ürat", "T.prot", "Alb", "T.bil", "D.bil", "Hb", "Hct", "Plt", "ANC", "aPTT", "Her Sahada ", "", "VitD", "KŞ", "", "sDBK", "", "PSA", "CRP", "ALP", "T.testosteron", "sT3", "sT4", "", ":", ":", "PTH", "", "", "<", "Fe", ":"];
+	longArray = [" .","Troponin - I", "µmol/L", "Folik Asit", "Sedimentasyon", "mm/saat", "LDL - Kolesterol", "HDL - Kolesterol", "Total Kolesterol","Trigliserid", "CA 19 - 9", "CA 15 - 3", "CA - 125", " saniye", "Glomerüler Filtrasyon Hızı ", "pg/mL", "IU/mL", "U/mL", "ng/mL", "ml/dk/1.73m2", "ng/L", "mU/L", "ng/dL", "µg/dL", "ml/dk/1,73m2", "\n", " - ", "mg/dL", "mmol/L", "g/dL", "IU/L", " M/µL", "/µL", "µg/L","U/mL", "U/L", " bin", "pg", "fL", "(CKD:EPI)", "türbidimetrik", "mg/L", "Protrombin Zamanı ", "Eozinofil %", " %", "Alkalen Fosfataz", "Kreatinin", "Sodyum", "Potasyum", "Kalsiyum", "Fosfor", "Magnezyum", "Ürik Asit", "Total Protein", "Albumin", "Total Bilirubin", "Direkt Bilirubin", "Hemoglobin", "Hematokrit", "Trombosit", "Nötrofil", "APTT", "Her Sahada", "Kültür:", "25 OH-Kolekalsiferol","Glukoz ", "Açlık", "Serb.Demir Bağlama Kap.", "(Prostat Spesifik Antijen)", "PSA ", "CRP ","ALP ","Total Testosteron", "Serbest T3", "Serbest T4", "mmol/mol", " :", ": ", "Paratiroid Hormon", "Difenil Hidantoin ", "Hastabaşı, glukometrik", "< ", "Demir-"," :", ".:", "()"];
+	shortArray = [".", "Troponin-I", "", "Folat", "Sedim", "", "LDL.kol", "HDL.kol", "T.kol", "TG", "CA 19-9", "CA 15-3", "CA 125", "\" ", "GFR", "", "", "", "", "", "", "", "", "", "", "", ":", "", "", "", "", "milyon ", "", "","", "", "k ", "", "", "", "", "", "", "Eozinofil%"," ", "", "Kre", "Na", "K", "Ca", "P", "Mg", "Ürat", "T.prot", "Alb", "T.bil", "D.bil", "Hb", "Hct", "Plt", "ANC", "aPTT", "Her Sahada ", "", "VitD", "KŞ", "", "sDBK", "", "PSA", "CRP", "ALP", "T.testosteron", "sT3", "sT4", "", ":", ":", "PTH", "", "", "<", "Fe", ":",":",""];
 function trimFunction() {
 	shortText = document.getElementById('text1').value;
-	shortText = shortText.replace (/ \./g, "."); //convert " ." -> "."
+	
 	for (index in longArray) { // first item to last item
-		rText= longArray[index];
-		shortText = shortText.replace (new RegExp(rText,"g"), shortArray[index]); // shorten long descriptions
+		shortText=shortText.split(longArray[index]).join(shortArray[index]);
 	}
-	shortText = shortText.replace (/\(\)/g, ""); // delete ()
-	shortText = shortText.replace (/\.:/g, ":"); //convert ".: " -> ":"
 	document.getElementById('text2').value = shortText;
 }
 function copyFunction() {
