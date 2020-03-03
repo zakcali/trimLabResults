@@ -18,6 +18,7 @@
 	shortArray = ["Troponin-I", "", "Folat", "Sedim", "", "LDL.kol", "HDL.kol", "T.kol", "TG", "CA 19-9", "CA 15-3", "CA 125", "\" ", "GFR", "", "", "", "", "", "", "", "", "", "", "", ":", "", "", "", "", "milyon ", "", "","", "", "k ", "", "", "", "", "", "", "Eozinofil%"," ", "", "Kre", "Na", "K", "Ca", "P", "Mg", "Ürat", "T.prot", "Alb", "T.bil", "D.bil", "Hb", "Hct", "Plt", "ANC", "aPTT", "Her Sahada ", "", "VitD", "KŞ", "", "sDBK", "", "PSA", "CRP", "ALP", "T.testosteron", "sT3", "sT4", "", ":", ":", "PTH", "", "", "<", "Fe", ":"];
 function trimFunction() {
 	shortText = document.getElementById('text1').value;
+	shortText = shortText.replace (/ \./g, "."); //convert " ." -> "."
 	for (index in longArray) { // first item to last item
 		rText= longArray[index];
 		shortText = shortText.replace (new RegExp(rText,"g"), shortArray[index]); // shorten long descriptions
