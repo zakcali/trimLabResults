@@ -10,6 +10,6 @@ I need to shorten the laboratory result texts, as follows:
 
 So I wrote a html web page, with minimal JavaScript coding. Just paste laboratory results text to form on the top, click "Kısalt" button, see trimmed text in the form on the bottom. Now you can select the trimmed text, and copy it to clipboard, then paste it to patients history.
 
-JavaScript split and join () methods instead of find/replace
+JavaScript split and join () methods instead of replace method.
 
 		shortText=shortText.split(myDict[i]).join(myDict[i+1]);
