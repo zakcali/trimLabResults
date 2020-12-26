@@ -1,0 +1,38 @@
+BUN - 22 mg/dL
+Kreatinin - 0,53 mg/dL
+Glomerüler Filtrasyon Hızı (CKD - EPI) - 87 ml/dk/1,73m2
+Sodyum - 141 mmol/L
+Potasyum - 4,7 mmol/L
+Kalsiyum - 8,2 mg/dL
+Fosfor. - 2,8 mg/dL
+Magnezyum - 2,44 mg/dL
+Albumin - 2,4 g/dL
+Total Bilirubin - 1,7 mg/dL
+Direkt Bilirubin - 1,1 mg/dL
+AST - 122 U/L
+ALT - 83 U/L
+ALP (Alkalen Fosfataz) - 309 U/L
+GGT - 297 U/L
+LDH - 839 U/L
+CRP (türbidimetrik) - 19,5 mg/L
+Hemoglobin. - 14 g/dL
+Hematokrit - 41,8 %
+Eritrosit . - 4,29 M/µL
+Lökosit. - 11,4 bin/µL
+Trombosit. - 162 bin/µL
+MCH. - 32,8 pg
+MCV. - 97,4 fL
+MCHC. - 33,6 %
+RDW. - 13,9 %
+MPV. - 8,5 fL
+Nötrofil - 9,68 bin/µL
+Lenfosit. - 0,91 bin/µL
+Monosit. - 0,755 bin/µL
+Eozinofil. - 0,001 bin/µL
+Bazofil. - 0,057 bin/µL
+Nötrofil% - 84,89 %
+Lenfosit% - 7,97 %
+Monosit% - 6,63 %
+Eozinofil % - 0,01 %
+Bazofil% - 0,5 %
+Nötrofil/Lenfosit oranı - 10,64 
