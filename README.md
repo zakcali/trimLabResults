@@ -12,4 +12,4 @@ as:
 ```
 
 
-I created a html web page, with minimal JavaScript coding. Just paste laboratory results text to form on the top, click "Kısalt" button, see trimmed text in the form on the bottom. Now you can select the trimmed text, and copy it to clipboard, then paste it to patients history.
+I created a html web page, with minimal JavaScript coding. Just paste laboratory results text to form on the top, click "Kısalt" button, see trimmed text in the form on the bottom. Now you can select the trimmed text, and click "Kopyala" to copy it to clipboard, then paste it to patients history in your EHR software.
